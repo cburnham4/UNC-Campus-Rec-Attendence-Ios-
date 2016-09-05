@@ -13,6 +13,13 @@
 		4417152A1D7B0175001F23C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441715291D7B0175001F23C6 /* Assets.xcassets */; };
 		4417152D1D7B0175001F23C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4417152B1D7B0175001F23C6 /* LaunchScreen.storyboard */; };
 		441715381D7B0175001F23C6 /* UNC_Campus_Rec_AttendenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441715371D7B0175001F23C6 /* UNC_Campus_Rec_AttendenceTests.swift */; };
+		441715511D7B160E001F23C6 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4417154A1D7B15C6001F23C6 /* Charts.framework */; };
+		441715521D7B160E001F23C6 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4417154A1D7B15C6001F23C6 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44E2FAC91D7C6EE50010200B /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E2FAC81D7C6EE50010200B /* Facility.swift */; };
+		44E2FACB1D7C73E80010200B /* CSVHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E2FACA1D7C73E80010200B /* CSVHelper.swift */; };
+		44E2FACD1D7C7B2D0010200B /* avg_usage.csv in Resources */ = {isa = PBXBuildFile; fileRef = 44E2FACC1D7C7B2D0010200B /* avg_usage.csv */; };
+		44F164D41D7D8CE900805D37 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F164D31D7D8CE900805D37 /* Time.swift */; };
+		44F164D91D7DAFB400805D37 /* GraphCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F164D81D7DAFB400805D37 /* GraphCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,56 @@
 			remoteGlobalIDString = 4417151E1D7B0175001F23C6;
 			remoteInfo = "UNC Campus Rec Attendence";
 		};
+		441715491D7B15C6001F23C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 441715421D7B15C6001F23C6 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		4417154B1D7B15C6001F23C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 441715421D7B15C6001F23C6 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		4417154D1D7B15C6001F23C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 441715421D7B15C6001F23C6 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		4417154F1D7B15C6001F23C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 441715421D7B15C6001F23C6 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		441715531D7B160E001F23C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 441715421D7B15C6001F23C6 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		441715551D7B160E001F23C6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				441715521D7B160E001F23C6 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4417151F1D7B0175001F23C6 /* UNC Campus Rec Attendence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UNC Campus Rec Attendence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +92,12 @@
 		441715331D7B0175001F23C6 /* UNC Campus Rec AttendenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UNC Campus Rec AttendenceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		441715371D7B0175001F23C6 /* UNC_Campus_Rec_AttendenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNC_Campus_Rec_AttendenceTests.swift; sourceTree = "<group>"; };
 		441715391D7B0175001F23C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441715421D7B15C6001F23C6 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
+		44E2FAC81D7C6EE50010200B /* Facility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		44E2FACA1D7C73E80010200B /* CSVHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVHelper.swift; sourceTree = "<group>"; };
+		44E2FACC1D7C7B2D0010200B /* avg_usage.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = avg_usage.csv; path = ../../../../Downloads/avg_usage.csv; sourceTree = "<group>"; };
+		44F164D31D7D8CE900805D37 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		44F164D81D7DAFB400805D37 /* GraphCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441715511D7B160E001F23C6 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +122,8 @@
 		441715161D7B0175001F23C6 = {
 			isa = PBXGroup;
 			children = (
+				44E2FAC71D7C6EBA0010200B /* objects */,
+				441715421D7B15C6001F23C6 /* Charts.xcodeproj */,
 				441715211D7B0175001F23C6 /* UNC Campus Rec Attendence */,
 				441715361D7B0175001F23C6 /* UNC Campus Rec AttendenceTests */,
 				441715201D7B0175001F23C6 /* Products */,
@@ -77,6 +142,7 @@
 		441715211D7B0175001F23C6 /* UNC Campus Rec Attendence */ = {
 			isa = PBXGroup;
 			children = (
+				44E2FACC1D7C7B2D0010200B /* avg_usage.csv */,
 				441715221D7B0175001F23C6 /* AppDelegate.swift */,
 				441715241D7B0175001F23C6 /* ViewController.swift */,
 				441715261D7B0175001F23C6 /* Main.storyboard */,
@@ -96,6 +162,28 @@
 			path = "UNC Campus Rec AttendenceTests";
 			sourceTree = "<group>";
 		};
+		441715431D7B15C6001F23C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4417154A1D7B15C6001F23C6 /* Charts.framework */,
+				4417154C1D7B15C6001F23C6 /* Charts.framework */,
+				4417154E1D7B15C6001F23C6 /* Charts.framework */,
+				441715501D7B15C6001F23C6 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44E2FAC71D7C6EBA0010200B /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				44E2FAC81D7C6EE50010200B /* Facility.swift */,
+				44E2FACA1D7C73E80010200B /* CSVHelper.swift */,
+				44F164D31D7D8CE900805D37 /* Time.swift */,
+				44F164D81D7DAFB400805D37 /* GraphCode.swift */,
+			);
+			name = objects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +194,12 @@
 				4417151B1D7B0175001F23C6 /* Sources */,
 				4417151C1D7B0175001F23C6 /* Frameworks */,
 				4417151D1D7B0175001F23C6 /* Resources */,
+				441715551D7B160E001F23C6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				441715541D7B160E001F23C6 /* PBXTargetDependency */,
 			);
 			name = "UNC Campus Rec Attendence";
 			productName = "UNC Campus Rec Attendence";
@@ -164,6 +254,12 @@
 			mainGroup = 441715161D7B0175001F23C6;
 			productRefGroup = 441715201D7B0175001F23C6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 441715431D7B15C6001F23C6 /* Products */;
+					ProjectRef = 441715421D7B15C6001F23C6 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4417151E1D7B0175001F23C6 /* UNC Campus Rec Attendence */,
@@ -172,12 +268,44 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4417154A1D7B15C6001F23C6 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 441715491D7B15C6001F23C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4417154C1D7B15C6001F23C6 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 4417154B1D7B15C6001F23C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4417154E1D7B15C6001F23C6 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 4417154D1D7B15C6001F23C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		441715501D7B15C6001F23C6 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 4417154F1D7B15C6001F23C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		4417151D1D7B0175001F23C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4417152D1D7B0175001F23C6 /* LaunchScreen.storyboard in Resources */,
+				44E2FACD1D7C7B2D0010200B /* avg_usage.csv in Resources */,
 				4417152A1D7B0175001F23C6 /* Assets.xcassets in Resources */,
 				441715281D7B0175001F23C6 /* Main.storyboard in Resources */,
 			);
@@ -197,7 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E2FAC91D7C6EE50010200B /* Facility.swift in Sources */,
 				441715251D7B0175001F23C6 /* ViewController.swift in Sources */,
+				44F164D41D7D8CE900805D37 /* Time.swift in Sources */,
+				44F164D91D7DAFB400805D37 /* GraphCode.swift in Sources */,
+				44E2FACB1D7C73E80010200B /* CSVHelper.swift in Sources */,
 				441715231D7B0175001F23C6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +349,11 @@
 			isa = PBXTargetDependency;
 			target = 4417151E1D7B0175001F23C6 /* UNC Campus Rec Attendence */;
 			targetProxy = 441715341D7B0175001F23C6 /* PBXContainerItemProxy */;
+		};
+		441715541D7B160E001F23C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 441715531D7B160E001F23C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -329,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "UNC Campus Rec Attendence/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.letshang.UNC-Campus-Rec-Attendence";
@@ -340,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "UNC Campus Rec Attendence/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "us.letshang.UNC-Campus-Rec-Attendence";
@@ -390,6 +529,7 @@
 				4417153E1D7B0175001F23C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4417153F1D7B0175001F23C6 /* Build configuration list for PBXNativeTarget "UNC Campus Rec AttendenceTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +538,7 @@
 				441715411D7B0175001F23C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
